@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Rclone Drive Sync</title>
+  <meta name="description" content="Application home page, privacy policy, and terms of service for personal Rclone Google Drive OAuth integration.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-area">
+        <div class="logo-icon">Rc</div>
+        <span>Personal Rclone Drive Sync</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="https://github.com/nanobrad/rclone-oauth" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <span class="badge">Self-Hosted Integration</span>
+      <h1>Personal Rclone Drive Sync</h1>
+      <p>
+        Welcome to the application portal for <strong>Personal Rclone Drive Sync</strong>. 
+        This application provides a dedicated Google Cloud OAuth 2.0 client configuration used exclusively 
+        to synchronize, back up, and mount personal Google Drive files to local systems via 
+        the open-source command-line tool <a href="https://rclone.org/" target="_blank" rel="noopener">Rclone</a>.
+      </p>
+
+      <div class="grid-features">
+        <div class="feature-box">
+          <h3>🔒 100% Client-Side</h3>
+          <p>Operates entirely on the local client machine. There are no hosted intermediary web servers or proxy databases.</p>
+        </div>
+        <div class="feature-box">
+          <h3>⚡ Direct Google API Connection</h3>
+          <p>Network requests travel directly between the local Rclone binary and official Google Drive API endpoints via HTTPS.</p>
+        </div>
+        <div class="feature-box">
+          <h3>🛡️ Local Token Storage</h3>
+          <p>All authentication tokens and refresh credentials remain strictly confined to the local user configuration file.</p>
+        </div>
+      </div>
+
+      <div class="notice-box">
+        <p><strong>Google OAuth Verification & Policy Notice:</strong></p>
+        <p>
+          This application complies with the 
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, 
+          including the Limited Use requirements. Please review our full legal disclosures below.
+        </p>
+      </div>
+
+      <div class="button-group">
+        <a href="privacy.html" class="btn btn-primary">Read Privacy Policy</a>
+        <a href="terms.html" class="btn btn-secondary">Read Terms of Service</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Technical Details & Configuration</h2>
+      <p>
+        When configuring your personal Google Cloud OAuth consent screen and credentials, you can supply 
+        the following verified URLs:
+      </p>
+      <ul>
+        <li><strong>Application Home Page:</strong> <code>https://nanobrad.github.io/rclone-oauth/</code></li>
+        <li><strong>Privacy Policy URL:</strong> <code>https://nanobrad.github.io/rclone-oauth/privacy.html</code></li>
+        <li><strong>Terms of Service URL:</strong> <code>https://nanobrad.github.io/rclone-oauth/terms.html</code></li>
+        <li><strong>Authorized Domain:</strong> <code>github.io</code></li>
+      </ul>
+
+      <h2>About Rclone</h2>
+      <p>
+        <a href="https://rclone.org/" target="_blank" rel="noopener">Rclone</a> is an established open-source utility licensed under the MIT License. 
+        This OAuth client configuration is privately administered by Brad Ferguson (<a href="mailto:nanobrad@gmail.com">nanobrad@gmail.com</a>) for personal, non-commercial data synchronization.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Brad Ferguson. All rights reserved.</p>
+      <p>Contact: <a href="mailto:nanobrad@gmail.com">nanobrad@gmail.com</a> | Source on <a href="https://github.com/nanobrad/rclone-oauth" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>

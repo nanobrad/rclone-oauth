@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Personal Rclone Drive Sync</title>
+  <meta name="description" content="Privacy Policy for Personal Rclone Drive Sync OAuth Application.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-area">
+        <div class="logo-icon">Rc</div>
+        <span>Personal Rclone Drive Sync</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="https://github.com/nanobrad/rclone-oauth" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="card">
+      <span class="badge">Legal Disclosure</span>
+      <h1>Privacy Policy</h1>
+      <p><em>Last updated: October 14, 2026</em></p>
+
+      <h2>1. Overview</h2>
+      <p>
+        This Privacy Policy explains how <strong>Personal Rclone Drive Sync</strong> ("the Application", "we", "us", or "our") 
+        handles user data when interacting with Google APIs, specifically the Google Drive API.
+      </p>
+      <p>
+        The Application is an individual, self-hosted integration enabling the open-source software 
+        <a href="https://rclone.org/" target="_blank" rel="noopener">Rclone</a> to access Google Drive storage on behalf of 
+        authorized users for personal backups, directory synchronization, and local filesystem mounting.
+      </p>
+
+      <h2>2. What Information We Access</h2>
+      <p>When you authorize the Application through Google's OAuth 2.0 flow, Rclone requests permission to interact with your Google Drive account. Depending on your configuration, this may include:</p>
+      <ul>
+        <li><strong>Google Account Identifier:</strong> Basic account email used strictly to verify the identity of the authenticating user during the OAuth consent flow.</li>
+        <li><strong>Google Drive Files and Metadata:</strong> File contents, folder hierarchies, timestamps, file sizes, and MIME types necessary to perform requested read, write, copy, move, sync, or mount actions.</li>
+        <li><strong>OAuth Authentication Tokens:</strong> Temporary access tokens and persistent refresh tokens issued directly by Google to authorize subsequent API requests.</li>
+      </ul>
+
+      <h2>3. How Information is Used and Transferred</h2>
+      <p>All data retrieved from Google Drive is used strictly and exclusively to fulfill the local operations requested by the user:</p>
+      <ul>
+        <li>Direct file transfer between your local device and Google Drive servers.</li>
+        <li>Local virtual filesystem mounting via FUSE.</li>
+        <li>Integrity verification (checksums and hashes) between local files and remote copies.</li>
+      </ul>
+      <p>
+        <strong>No Intermediary Servers:</strong> Communication occurs directly between the Rclone client running on your machine and Google’s official API endpoints (<code>https://www.googleapis.com</code>). No telemetry, usage statistics, user data, or file payloads are ever routed through or uploaded to any third-party or hosted server.
+      </p>
+
+      <h2>4. Data Storage and Security</h2>
+      <ul>
+        <li><strong>Local Storage Only:</strong> All OAuth tokens (access tokens and refresh tokens) and configuration parameters are stored locally on your machine in Rclone's configuration file (by default, <code>~/.config/rclone/rclone.conf</code>).</li>
+        <li><strong>Encryption:</strong> Rclone provides built-in configuration encryption to protect tokens stored at rest. We strongly recommend encrypting your local configuration file.</li>
+        <li><strong>No Cloud Retention:</strong> We operate no external databases, tracking systems, log collectors, or cloud analytics services.</li>
+      </ul>
+
+      <h2>5. Data Sharing and Third Parties</h2>
+      <p>
+        We do not sell, rent, lease, trade, transfer, or disclose your personal data or Google Drive contents to any third parties. 
+        Your data is neither used for advertising, nor used to train artificial intelligence or machine learning models.
+      </p>
+
+      <h2>6. Google API Services User Data Policy Compliance</h2>
+      <div class="notice-box">
+        <p>
+          <strong>Limited Use Requirement:</strong><br>
+          Personal Rclone Drive Sync's use and transfer to any other app of information received from Google APIs will adhere to the 
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, 
+          including the Limited Use requirements.
+        </p>
+      </div>
+
+      <h2>7. How to Revoke Access</h2>
+      <p>You retain full control over your Google account permissions at all times. You can revoke this application's access immediately by:</p>
+      <ol>
+        <li>Visiting your Google Account settings: <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Third-Party Permissions</a>.</li>
+        <li>Locating <strong>Personal Rclone Drive Sync</strong> in the list of authorized third-party apps.</li>
+        <li>Clicking <strong>Remove Access</strong>.</li>
+      </ol>
+      <p>Additionally, you may delete your local configuration at any time by removing the remote from your local <code>rclone.conf</code> file via <code>rclone config delete [remote_name]</code>.</p>
+
+      <h2>8. Contact Information</h2>
+      <p>If you have any questions or concerns regarding this Privacy Policy or data handling, please contact:</p>
+      <p>
+        <strong>Brad Ferguson</strong><br>
+        Email: <a href="mailto:nanobrad@gmail.com">nanobrad@gmail.com</a><br>
+        GitHub: <a href="https://github.com/nanobrad" target="_blank" rel="noopener">@nanobrad</a>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 Brad Ferguson. All rights reserved.</p>
+      <p>Contact: <a href="mailto:nanobrad@gmail.com">nanobrad@gmail.com</a> | Source on <a href="https://github.com/nanobrad/rclone-oauth" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
